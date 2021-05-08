@@ -2,9 +2,11 @@ package extendsanimal;
 
 
 
+
 public class Cat extends Animal {
 
     private final static int STOP_RUN = 200;
+
 
     public Cat  (String name, String type){
         super (name, type);
@@ -13,9 +15,10 @@ public class Cat extends Animal {
     @Override
     public void run() {
         if (len.nextInt() < STOP_RUN) {
-            super.run();
+            System.out.println(type + " " + name + " пробежал: " + len.nextInt((1)+550) + "м");;
         }else
             System.out.println(type + " " + name + " устал");
+
     }
 
     @Override
